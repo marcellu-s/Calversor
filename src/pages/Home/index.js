@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
 
-// import Navbar from './components/Navbar';
+import Navbar from '../../components/Navbar';
 
 export default function Home() {
     return (
@@ -13,6 +13,8 @@ export default function Home() {
                 <StatusBar style="light" />
 
                 <Text style={styles.title}>Calversor</Text>
+
+                <Navbar />
 
             </SafeAreaView>
 
