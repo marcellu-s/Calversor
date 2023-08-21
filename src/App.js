@@ -1,12 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+
+import Navbar from './components/Navbar';
 
 export default function App() {
     return (
-        <View style={styles.container}>
-            <Text>Open up App.js to start working on your app!</Text>
-            <StatusBar style="auto" />
-        </View>
+
+        <LinearGradient style={styles.container} colors={['#A62A5C','#6A2597']}>
+
+            <SafeAreaView style={styles.container}>
+
+                <StatusBar style="auto" />
+
+            </SafeAreaView>
+
+        </LinearGradient>
     );
 }
 
@@ -16,5 +25,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+    },
+
+    title: {
+        fontSize: 32
     },
 });
