@@ -4,7 +4,7 @@ import { StyleSheet, Text, SafeAreaView, View } from 'react-native';
 
 import Navbar from '../../components/Navbar';
 
-export default function Temperature() {
+export default function Money() {
     
     return(
         <LinearGradient style={styles.container} colors={['#3A1B59','#D93D66']}>
@@ -14,7 +14,7 @@ export default function Temperature() {
                 <StatusBar style="light" />
 
                 <View>
-                    <Text>Temperatura</Text>
+                    <Text>Money</Text>
                 </View>
 
             </SafeAreaView>

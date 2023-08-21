@@ -8,7 +8,7 @@ export default function Navbar() {
 
     return(
         <View style={styles.navbar}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Money')}>
                 <MaterialIcons name="attach-money" size={24} color="#fff" />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate('Calculator')}>
@@ -17,7 +17,7 @@ export default function Navbar() {
             <TouchableOpacity onPress={() => navigation.navigate('Home')}>
                 <Ionicons name="home-outline" size={32} color="#fff" /> 
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Temperature')}>
                 <FontAwesome5 name="temperature-low" size={24} color="#fff" />
             </TouchableOpacity>
             <TouchableOpacity>

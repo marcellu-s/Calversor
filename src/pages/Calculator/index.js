@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient';
-import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, View } from 'react-native';
 
 import Navbar from '../../components/Navbar';
 
@@ -13,7 +13,9 @@ export default function Calculator() {
 
                 <StatusBar style="light" />
 
-                <Text style={styles.title}>Calcadora</Text>
+                <View>
+                    <Text>Calculadora</Text>
+                </View>
 
             </SafeAreaView>
 
