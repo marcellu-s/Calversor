@@ -5,6 +5,7 @@ import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import Navbar from '../../components/Navbar';
 
 export default function Home() {
+
     return (
         <LinearGradient style={styles.container} colors={['#3A1B59','#D93D66']}>
 
@@ -25,7 +26,6 @@ export default function Home() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-
     },
 
     title: {

@@ -1,24 +1,27 @@
 import { StyleSheet, View, Dimensions, TouchableOpacity } from 'react-native';
-import { Ionicons, AntDesign, Feather } from '@expo/vector-icons';
+import { Ionicons, MaterialIcons, AntDesign, FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Navbar() {
+
+    const navigation = useNavigation();
 
     return(
         <View style={styles.navbar}>
             <TouchableOpacity>
-                <Ionicons name="home-outline" size={24} color="#fff" /> 
+                <MaterialIcons name="attach-money" size={24} color="#fff" />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Calculator')}>
+                <AntDesign name="calculator" size={24} color="#fff" />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+                <Ionicons name="home-outline" size={32} color="#fff" /> 
             </TouchableOpacity>
             <TouchableOpacity>
-                <AntDesign name="heart" size={24} color="#fff" />
+                <FontAwesome5 name="temperature-low" size={24} color="#fff" />
             </TouchableOpacity>
             <TouchableOpacity>
-                <AntDesign name="plus" size={32} color="#FE8A07" />
-            </TouchableOpacity>
-            <TouchableOpacity>
-                <Ionicons name="person-circle-outline" size={28} color="#fff" />
-            </TouchableOpacity>
-            <TouchableOpacity>
-                <Feather name="settings" size={24} color="#fff" />
+                <MaterialCommunityIcons name="lightning-bolt" size={24} color="#fff" />
             </TouchableOpacity>
         </View>
     );
