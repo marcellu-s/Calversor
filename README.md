@@ -6,7 +6,7 @@ Tecnologia utilizada: <strong>React Native</strong>, <strong>Expo</strong>
 
 Integrantes do projeto:
 <a href="https://github.com/marcellu-s">Marcelo Costa</a> |
-<a href="https://github.com/RibamarJ">Ribamar Júlio</a>
+<a href="https://github.com/RibamarJ">Ribamar Júlio</a> |
 <a href="https://github.com/VerNancio">Vinicius Oliveira</a>
 
 Realizado durante o meu período de estudos no Senai Suíço-Brasileira.<br>
