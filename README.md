@@ -47,5 +47,7 @@ Um valor de 1 real por cada instalação e/ou uso do site, com um lucro de R$18,
 
 - __[Marcelo Costa](https://github.com/marcellu-s)__ - Front-end/Back-end
 - __[Ribamar Júlio](https://github.com/RibamarJ)__ - Front-end/Back-end
-- __[Ribamar Júlio](https://github.com/VerNancio)__ - Front-end/Back-end
+- __[Vinicius Souza](https://github.com/VerNancio)__ - Front-end/Back-end
+- __[Robert Sena](https://github.com/RibamarJ)__ - Back-end
+- __[Luiz Felipe](https://github.com/VerNancio)__ - Back-end
 ---
