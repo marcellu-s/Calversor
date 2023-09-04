@@ -11,9 +11,7 @@ export default function Calculator() {
 
     function press(value) {
 
-        console.log(value)
         setDigitos(digitos + value)
-        console.log(digitos)
     }
 
     function clear() {
@@ -26,6 +24,23 @@ export default function Calculator() {
         setResolucao(digitos);
         setDigitos(eval(digitos));
 
+    }
+    function operation (value) {
+        var operacao = digitos[digitos.length -1];
+        if ((operacao == '+') || (operacao == '-') || (operacao == '*') || (operacao == '/')){
+            var alOp = digitos.substring(0, (digitos.length -1)) + value;
+            setDigitos('');
+            setDigitos(alOp);
+        }
+        else{
+            setDigitos(digitos + value);
+        }
+
+    }
+    function limpe (){
+        digAnt = digitos.substring(0, digitos.length -1);
+        setDigitos('');
+        setDigitos(digAnt);
     }
 
 
@@ -50,27 +65,27 @@ export default function Calculator() {
                 </View>
                 <View style={styles.linha}>
                     <TouchableOpacity style={styles.btnc} onPress={() => clear()}><Text style={styles.txtbtn}>CE</Text></TouchableOpacity>
-                    <TouchableOpacity style={styles.btnc}><Text style={styles.txtbtn}>C</Text></TouchableOpacity>
-                    <TouchableOpacity style={styles.btnc}><Text style={styles.txtbtn}>L</Text></TouchableOpacity>
-                    <TouchableOpacity style={styles.btnf} onPress={() => press('/')}><Text style={styles.txtbtn}>/</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.btnc} onPress={() => clear()}><Text style={styles.txtbtn}>C</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.btnc} onPress={() => limpe()}><Text style={styles.txtbtn}>L</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.btnf} onPress={() => operation('/')}><Text style={styles.txtbtn}>/</Text></TouchableOpacity>
                 </View>
                 <View style={styles.linha}>
                     <TouchableOpacity style={styles.btnd} onPress={() => press('7')}><Text style={styles.txtbtn}>7</Text></TouchableOpacity>
                     <TouchableOpacity style={styles.btnd} onPress={() => press('8')}><Text style={styles.txtbtn}>8</Text></TouchableOpacity>
-                    <TouchableOpacity style={styles.btnd} onPress={() => pPress('9')}><Text style={styles.txtbtn}>9</Text></TouchableOpacity>
-                    <TouchableOpacity style={styles.btnf} onPress={() => press('X')}><Text style={styles.txtbtn}>X</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.btnd} onPress={() => press('9')}><Text style={styles.txtbtn}>9</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.btnf} onPress={() => operation('*')}><Text style={styles.txtbtn}>X</Text></TouchableOpacity>
                 </View>
                 <View style={styles.linha}>
                     <TouchableOpacity style={styles.btnd} onPress={() => press('4')}><Text style={styles.txtbtn}>4</Text></TouchableOpacity>
                     <TouchableOpacity style={styles.btnd} onPress={() => press('5')}><Text style={styles.txtbtn}>5</Text></TouchableOpacity>
                     <TouchableOpacity style={styles.btnd} onPress={() => press('6')}><Text style={styles.txtbtn}>6</Text></TouchableOpacity>
-                    <TouchableOpacity style={styles.btnf} onPress={() => press('-')}><Text style={styles.txtbtn}>-</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.btnf} onPress={() => operation('-')}><Text style={styles.txtbtn}>-</Text></TouchableOpacity>
                 </View>
                 <View style={styles.linha}>
                     <TouchableOpacity style={styles.btnd} onPress={() => press('1')}><Text style={styles.txtbtn}>1</Text></TouchableOpacity>
                     <TouchableOpacity style={styles.btnd} onPress={() => press('2')}><Text style={styles.txtbtn}>2</Text></TouchableOpacity>
                     <TouchableOpacity style={styles.btnd} onPress={() => press('3')}><Text style={styles.txtbtn}>3</Text></TouchableOpacity>
-                    <TouchableOpacity style={styles.btnf} onPress={() => press('+')}><Text style={styles.txtbtn}>+</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.btnf} onPress={() => operation('+')}><Text style={styles.txtbtn}>+</Text></TouchableOpacity>
                 </View>
                 <View style={styles.linha}>
                     <TouchableOpacity style={styles.btne}><Text style={styles.txtbtn}>+/-</Text></TouchableOpacity>
