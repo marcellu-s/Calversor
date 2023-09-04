@@ -28,14 +28,19 @@
       npm run start
 - Com o aplicativo Expo Go, scaneie o QR Code do terminal
 ---
-### __Como rodar o front-end__
-
-
 ### __Precificação__
 
+Tempo de desenvolvimento:
+- 16 horas
 
+Preço por hora: 18/h
+
+Preço final: R$ 288,00
+
+---
 ### __Monetização__
 
+Um valor de 1 real por cada instalação e/ou uso do site, com um lucro de R$18,00 a cada 22 Downloads (Por dia).
 
 ---
 ### __Equipe de desenvolvedores__
