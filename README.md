@@ -1,13 +1,46 @@
-# App Mobile de Calculadora e Conversor (Temperatura e moedas)
-Disciplina: Programação para dispositivos Móveis.<br>
-Proposta: Criar um aplicativo com uma calculadora e conversores.<br>
+# Calversoria
 
-Tecnologia utilizada: <strong>React Native</strong>, <strong>Expo</strong>
+### __O que é o projeto?__
 
-Integrantes do projeto:
-<a href="https://github.com/marcellu-s">Marcelo Costa</a> |
-<a href="https://github.com/RibamarJ">Ribamar Júlio</a> |
-<a href="https://github.com/VerNancio">Vinicius Oliveira</a>
+- Calculadora e conversor (moedas e temperatura)
+---
+### __Objetivo__
 
-Realizado durante o meu período de estudos no Senai Suíço-Brasileira.<br>
-Realizado no: 3º Semestre 2023
+- Desenvolver um aplicativo mobile, que se possa utiliza-lo como calculadora e conversor
+---
+### __Tecnologias utilizadas__
+
+- React Native
+- Expo
+---
+### __Como clonar__
+`OBS: Necessário ter o git instalado na sua máquina!`
+
+    git clone https://github.com/marcellu-s/SENAI-PPDM-Calversoria.git
+
+### __Como rodar o app__
+`OBS: Necessário ter o Node instalado na sua máquina, e o aplicativo Expo Go no seu celular!`
+- No terminal, digite:
+  
+      npm install
+- Em seguida:
+
+      npm run start
+- Com o aplicativo Expo Go, scaneie o QR Code do terminal
+---
+### __Como rodar o front-end__
+
+
+### __Precificação__
+
+
+### __Monetização__
+
+
+---
+### __Equipe de desenvolvedores__
+
+- __[Marcelo Costa](https://github.com/marcellu-s)__ - Front-end/Back-end
+- __[Ribamar Júlio](https://github.com/RibamarJ)__ - Front-end/Back-end
+- __[Ribamar Júlio](https://github.com/VerNancio)__ - Front-end/Back-end
+---
