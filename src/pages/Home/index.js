@@ -14,7 +14,7 @@ export default function Home() {
                 <StatusBar style="light" />
 
                 <View style={styles.center}>
-                    <Text style={styles.title}>Calversor</Text>
+                    <Text style={styles.title}>Calversoria</Text>
                 </View>
 
             </SafeAreaView>
