@@ -20,7 +20,7 @@ export default function Navbar() {
             <TouchableOpacity onPress={() => navigation.navigate('Temperature')}>
                 <FontAwesome5 name="temperature-low" size={24} color="#fff" />
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Lightning')}>
                 <MaterialCommunityIcons name="lightning-bolt" size={24} color="#fff" />
             </TouchableOpacity>
         </View>
@@ -35,8 +35,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-
-        width: '100%',
+        width: Dimensions.get('window').width,
         position: 'absolute',
         bottom: 0,
         alignSelf: 'center',
