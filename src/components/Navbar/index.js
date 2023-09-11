@@ -32,14 +32,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#242A37',
         paddingHorizontal: 32,
         paddingVertical: 8,
-        borderRadius: 16,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
 
-        width: Dimensions.get('window').width - 64,
+        width: '100%',
         position: 'absolute',
-        bottom: 16,
+        bottom: 0,
         alignSelf: 'center',
     }
 });
