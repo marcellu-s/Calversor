@@ -16,7 +16,7 @@
 ### __Como clonar__
 `OBS: Necessário ter o git instalado na sua máquina!`
 
-    git clone https://github.com/marcellu-s/SENAI-PPDM-Calversoria.git
+    git clone https://github.com/marcellu-s/calversoria.git
 
 ### __Como rodar o app__
 `OBS: Necessário ter o Node instalado na sua máquina, e o aplicativo Expo Go no seu celular!`
